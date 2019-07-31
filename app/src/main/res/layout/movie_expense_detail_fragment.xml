@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="fill_parent"
+    android:background="@color/windowBackground"
+    android:paddingBottom="@dimen/default_scroll_top_padding">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/windowBackground">
+        <TextView
+            android:text="@string/expense_status"
+            style="@style/AppTheme.SectionTitle"/>
+
+        <LinearLayout
+            style="@style/AppTheme.InputRowLayoutWithPadding">
+
+
+            <TextView
+                style="@style/AppTheme.InputLabel"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/merchant_pic" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/AppTheme.InputRowLayout"
+            >
+
+            <EditText style="@style/AppTheme.InputEditText"
+                android:id="@+id/pic"/>
+            <ImageView
+                android:layout_marginLeft="300sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/upload_icn"
+                />
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout style="@style/AppTheme.InputRowLayoutWithPadding">
+
+            <TextView
+                style="@style/AppTheme.InputLabel"
+                android:layout_gravity="center"
+                android:text="@string/date" />
+
+
+            <LinearLayout style="@style/AppTheme.InputRowLayoutWithPadding">
+
+                <TextView
+                    style="@style/AppTheme.InputLabel"
+                    android:id="@+id/customer_summary"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="@string/date_hint" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/AppTheme.InputRowLayout">
+
+            <TextView
+                style="@style/AppTheme.InputLabel"
+                android:text="@string/currency_value" />
+
+            <TextView
+                style="@style/AppTheme.InputLabel"
+                android:id="@+id/currency"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="RWF"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/AppTheme.InputRowLayoutWithPadding">
+            <TextView
+                style="@style/AppTheme.InputLabel"
+                android:text="@string/total" />
+
+            <TextView
+                style="@style/AppTheme.InputLabel"
+                android:id="@+id/total"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="RF 0.00"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout style="@style/AppTheme.InputRowLayoutWithPadding">
+
+            <TextView
+                style="@style/AppTheme.InputLabel"
+                android:layout_gravity="center"
+                android:text="@string/comment" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/AppTheme.InputRowLayoutWithPadding">
+
+            <EditText
+                style="@style/AppTheme.InputEditText"
+                android:id="@+id/comment"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/colorDarkGray"/>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout style="@style/AppTheme.InputRowLayoutWithPadding">
+
+            <TextView
+                style="@style/AppTheme.InputLabel"
+                android:layout_gravity="center"
+                android:text="@string/category" />
+
+
+            <LinearLayout style="@style/AppTheme.InputRowLayoutWithPadding">
+
+                <Spinner
+                    style="@style/Spinner"
+                    android:id="@+id/spinner_category"
+                    android:layout_width="0dp"
+                    android:entries="@array/category_type"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/AppTheme.InputRowLayout"
+            android:paddingTop="@dimen/activity_default_margin">
+
+            <Button android:id="@+id/continue_button"
+                style="@style/AppTheme.ButtonLayout"
+                android:background="@color/textColorPrimary"
+                android:textColor="@color/colorAccent"
+                android:text="@string/delete_button" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,239 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionMenuTextColor">@color/textColorPrimary</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppTheme.Main" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionMenuTextColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.SectionTitle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/title_font_size</item>
+        <item name="android:layout_margin">@dimen/activity_default_margin</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.InputLabel">
+        <item name="android:layout_width">@dimen/label_default_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/label_font_size</item>
+        <item name="android:textColor">@color/colorDarkGray</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="AppTheme.InputLabel_checkout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/label_font_size</item>
+        <item name="android:textColor">@color/colorDarkGray</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="AppTheme.InputEditText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">@dimen/input_text_default_margin</item>
+        <item name="android:inputType">text|textNoSuggestions</item>
+    </style>
+
+    <style name="AppTheme.InputEditTextAddAddress">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:inputType">text|textNoSuggestions</item>
+    </style>
+
+    <style name="AppTheme.InputEditTextAddAddress_inner_layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:inputType">text|textNoSuggestions</item>
+    </style>
+
+    <style name="AppTheme.InputRowLayout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+
+    <style name="AppTheme.InputRowLayoutWithPadding" parent="AppTheme.InputRowLayout">
+        <item name="android:layout_marginTop">@dimen/activity_default_margin</item>
+    </style>
+
+    <style name="AppTheme.LeftColumnLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="AppTheme.CheckoutCOlumnLayout">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AppTheme.TextViewStyle">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorDarkGray</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <style name="AppTheme.LeftColumnLayoutTitle" parent="AppTheme.LeftColumnLayout">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorDarkGray</item>
+    </style>
+
+    <style name="AppTheme.RightColumnLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="AppTheme.RightColumnLayoutTitle" parent="AppTheme.RightColumnLayout">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorDarkGray</item>
+    </style>
+
+    <style name="AppTheme.SectionBoxLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">@dimen/activity_default_margin</item>
+        <item name="android:background">@color/textColorPrimary</item>
+    </style>
+
+    <style name="AppTheme.ButtonLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">70sp</item>
+        <item name="android:layout_marginRight">70sp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="AppTheme.ButtonLayoutSecondary">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/activity_default_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_default_margin</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="AppTheme.ButtonLayoutAddress">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/buttonText</item>
+    </style>
+
+    <style name="AppTheme.TransactionButtonLayout" parent="AppTheme.ButtonLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/default_button_height</item>
+        <item name="android:layout_margin">@dimen/activity_horizontal_margin</item>
+        <item name="android:background">@color/colorSecondary</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.ButtonSecondary" parent="AppTheme.Button">
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.ButtonTintBlue" parent="AppTheme.Button">
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- card payment -->
+
+
+
+
+
+
+    <style name="Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textColor">@color/buttonText</item>
+    </style>
+
+    <style name="Save" parent="@style/Button">
+        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_marginTop">@dimen/activity_horizontal_margin</item>
+
+    </style>
+
+    <style name="Spinner">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorDarkGray</item>
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+    </style>
+
+
+ <style name="Widget.Design.CoordinatorLayout.list">
+     <item name="android:layout_height">100sp</item>
+     <item name="android:layout_width">match_parent</item>
+ </style>
+
+    <style name="mySpinnerStyle" parent="android:Widget.ListView.DropDown">
+        <item name="android:divider">@color/colorPrimary</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <style name="editTextTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+
+</resources>

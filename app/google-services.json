@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "455604846989",
+    "firebase_url": "https://midas-787b6.firebaseio.com",
+    "project_id": "midas-787b6",
+    "storage_bucket": "midas-787b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455604846989:android:5fc94ee6cd4ff914",
+        "android_client_info": {
+          "package_name": "com.movie.film"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "455604846989-etcfv62deulk6tj6lk5evjme5dhsm5n9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.midas.Movie",
+            "certificate_hash": "9cdae8804c9ac4c62acfe5f90c7fe1e57bfb0e0c"
+          }
+        },
+        {
+          "client_id": "455604846989-67e61nrpq8md6a59205d24mg2le8jca6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoP0ol_Z1r4FvY250gU_IPeuCDH96TV7c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "455604846989-67e61nrpq8md6a59205d24mg2le8jca6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

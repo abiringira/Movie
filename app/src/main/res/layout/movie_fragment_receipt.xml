@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/windowBackground">
+
+    <TextView
+        android:id="@+id/receipt_title"
+        style="@style/AppTheme.SectionTitle"
+        android:layout_gravity="center_horizontal"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    style="@style/AppTheme.TextViewStyle"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/receiver"
+                    android:text=""/>
+            </LinearLayout>
+
+            <TextView style="@style/AppTheme.TextViewStyle"
+                      android:layout_marginTop="10dp"
+                      android:visibility="gone"
+                      android:id="@+id/meter_serial_code_text"
+                       />
+           <!-- android:text="@string/meter_serial_code_text"-->
+
+            <TextView style="@style/AppTheme.TextViewStyle"
+                android:layout_marginTop="10dp"
+               />
+           <!-- android:text="@string/receipt_contact_phone"-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                >
+                <TextView
+                    style="@style/AppTheme.TextViewStyle"
+                    android:id="@+id/bill_amount_text_title"
+                    />
+               <!-- android:text="@string/confirmation_bill_amount"-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/usd_amount"/>
+               <!--     android:text="@string/confirmation_bill_amount"-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                >
+                <TextView style="@style/AppTheme.TextViewStyle"/>
+                  <!--  android:text="@string/confirmation_total_amount"-->
+                    />
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/total_amount"/>
+                    <!--android:text="@string/confirmation_total_amount"-->
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/account_number_text"
+                    style="@style/AppTheme.TextViewStyle"/>
+                   <!-- android:text="@string/receipt_account"-->
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/account_number"
+                    android:text=""/>
+            </LinearLayout>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/meter_serial_code"
+                      android:layout_marginTop="10dp"
+                      android:visibility="gone"/>
+                     <!-- android:text="@string/meter_serial_code"-->
+                />
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_phone"
+                android:layout_marginTop="10dp"/>
+         <!--       android:text="@string/receipt_contact_phone" -->
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/local_amount_layout"
+                android:orientation="vertical">
+
+            <TextView style="@style/AppTheme.TextViewStyle"
+                android:id="@+id/local_amount_title"/>
+            <!--    android:text="@string/confirmation_local_amount"-->
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/local_amount"/>
+            <!--    android:text="@string/confirmation_local_amount"-->
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView style="@style/AppTheme.TextViewStyle"/>
+                   <!-- android:text="@string/confirmation_payment_type"-->
+                    />
+
+
+                <TextView android:id="@+id/card_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                    <!--android:text="@string/confirmation_payment_type"-->
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"/>
+    <!--    android:background="@color/transparent"-->
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            >
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/AppTheme.SectionBoxLayout"
+        >
+       <!-- android:background="@color/transparent"-->
+
+        <LinearLayout
+            style="@style/AppTheme.InputRowLayout"
+            android:paddingTop="@dimen/small_padding">
+
+             <!--<Button android:id="@+id/continue_button"
+                style="@style/AppTheme.ButtonLayout"
+                android:theme="@style/AppTheme.Button"
+                android:text="@string/receipt_done" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/AppTheme.InputRowLayout"
+            android:paddingTop="@dimen/small_padding">
+
+          <!--  <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/small_padding"
+                android:textColor="@color/colorDarkGray"
+                android:gravity="center_horizontal"
+                android:text="@string/receipt_thanks"/>-->
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

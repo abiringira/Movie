@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Film Fan</string>
+    <string name="title_activity_Movielogin">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="sign_done_label">By Tapping Create Account, you accept the <a href="https://tuma.herokuapp.com/#tos">Terms of Services</a> and <a href="https://tuma.herokuapp.com/#privacy">Privacy Policy</a></string>
+    <string name="tagline">Fast . Secure . Instant</string>
+    <string name="login_copyright">Copyright (c) 2019 Abiringira LLC. All right reserved.</string>
+    <string name="title_activity_Moviebase">MovieBaseActivity</string>
+    <string name="menu_service">Now Playing</string>
+    <string name="menu_history">Movie Details</string>
+    <string name="menu_approval">Home</string>
+    <string name="menu_account">Home</string>
+    <string name="menu_header">Menu</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_invite">add Movie</string>
+    <string name="drawer_open">open drawer</string>
+    <string name="drawer_close">close drawer</string>
+    <string name="Get_started">Get Started</string>
+    <string name="plan"> Tap the button below and Book your Preferable Movie</string>
+    <string name="expense_section_title">New Film</string>
+    <string name="expense_status">New</string>
+    <string name="merchant_pic">Receipt</string>
+    <string name="employee_email">abiringiraemmanuel@gmail.com</string>
+    <string name="date">Date</string>
+    <string name="date_hint">June 28,2018</string>
+    <string name="currency_value">currency</string>
+    <string name="total">Amount</string>
+    <string name="comment">Description</string>
+    <string name="done_button">Save</string>
+    <string name="delete_button">Delete</string>
+    <string name="category">Category</string>
+    <string name="ok">OK</string>
+    <string name="password_reset_password_hint">new password</string>
+    <string name="re_enter_password_reset_password_hint">re-enter new password</string>
+    <string name="password_reset_done">Reset and Login</string>
+    <string name="passwords_should_match">new and re-entered password should match</string>
+    <string name="code_should_be_numeric">access code should be numeric</string>
+    <string name="password_reset_error_title">Password Reset Error</string>
+    <string name="password_reset_missing_password">Password is required</string>
+    <string name="re_enter_password_reset_missing_password">Re-Entering password is required</string>
+    <string name="password_recovery_missing_email">Email is required</string>
+
+    <string-array name="currency_type">
+        <item>RWF</item>
+        <item>$</item>
+    </string-array>
+
+    <string-array name="category_type">
+        <item>Other</item>
+        <item>Advertising</item>
+        <item>Insurance</item>
+        <item>Car</item>
+        <item>Labor</item>
+        <item>Professional Services</item>
+        <item>Materials</item>
+        <item>Advertising</item>
+        <item>Insurance</item>
+        <item>Fees</item>
+        <item>Meals and Entertainment</item>
+        <item>Maintenance</item>
+        <item>Office Supplies</item>
+        <item>Rent</item>
+        <item>Taxes</item>
+        <item>Travel</item>
+        <item>Utilities</item>
+    </string-array>
+<string name="btn_link_to_login">Forgot Password</string>
+    <string name="invite_message"> Check out Midas app for your smartphone. Download it today from https://play.google.com/store/apps/details?id=com.midas.Movie"</string>
+    <string name= "google_image_url"> https://developers.google.com/identity/images/g-logo.png</string>
+    <string name="invite_title">Invite Friends</string>
+
+
+</resources>
+
+
+
