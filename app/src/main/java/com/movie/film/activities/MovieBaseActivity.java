@@ -49,7 +49,7 @@ public class MovieBaseActivity extends AppCompatActivity implements MovieUserErr
     }
 
 
-    public void straightLogout() {
+    public void straightHome() {
         Intent intent = new Intent(this, MovieMainActivity.class);
         startActivity(intent);
         finish();

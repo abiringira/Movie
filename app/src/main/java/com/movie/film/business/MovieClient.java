@@ -6,7 +6,7 @@ public interface MovieClient {
     public final String URL = "";
     public final String SIGNUP_RELATIVE_PATH = "";
     public final String LOGIN_RELATIVE_PATH = "";
-    public final String EXPENSE_CLAIM_PATH = "";
+    public final String MOVIE_DETAILS_PATH = "";
     public final String PING_SERVER_RELATIVE_PATH = "https://api.themoviedb.org/3/genre/movie";
     public final String USER_ACTIVITIES_PATH = "https://api.themoviedb.org/3/movie/now_playing?api_key=45d139dbb35cd83f615ff5c35a7c65b7&language=en-US&page=1";
     public final String RESET_PASSWORD_PATH = "";
@@ -27,7 +27,7 @@ public interface MovieClient {
         LOGIN,
         LOGOUT,
         PASSWORD_RESET,
-        EXPENSE_CLAIM,
+        MOVIE_DETAILS,
         USER_ACTIVITIES
     }
 

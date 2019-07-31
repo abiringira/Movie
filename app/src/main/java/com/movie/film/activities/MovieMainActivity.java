@@ -99,15 +99,15 @@ public class MovieMainActivity extends MovieBaseActivity {
                         mDrawerLayout.openDrawer(GravityCompat.START);
                         return true;
                     case R.id.menu_service:
-                        showExpenseReport();
+                        showMovieDetails();
                         mDrawerLayout.closeDrawers();
                         return true;
                     case R.id.menu_activity:
-                        showUserActivities();
+                        showNowPlaying();
                         mDrawerLayout.closeDrawers();
                         return true;
                     case R.id.menu_account:
-                        straightLogout();
+                        straightHome();
                         mDrawerLayout.closeDrawers();
                         return true;
                 }
@@ -155,7 +155,7 @@ public class MovieMainActivity extends MovieBaseActivity {
 
         }
     }
-    private void showExpenseReport() {
+    public void showMovieDetails() {
         MovieBookFragment frag = new MovieBookFragment();
         FragmentManager fm = getSupportFragmentManager();
         fm.beginTransaction()
@@ -165,7 +165,7 @@ public class MovieMainActivity extends MovieBaseActivity {
     }
 
 
-    private void showUserActivities() {
+    private void showNowPlaying() {
         MovieUserActivitiesFragment frag = new MovieUserActivitiesFragment();
         FragmentManager fm = getSupportFragmentManager();
         fm.beginTransaction()

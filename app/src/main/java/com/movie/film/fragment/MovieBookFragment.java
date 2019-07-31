@@ -141,7 +141,7 @@ public class MovieBookFragment extends Fragment implements MoviePhotoUpload, Mov
                // if (controller != null) {
                    // Log.e("photoId:", "after id of a photo");
                     //controller.setActivity(this);
-                    //controller.setServiceType(MovieClient.MovieServiceType.EXPENSE_CLAIM);
+                    //controller.setServiceType(MovieClient.MovieServiceType.MOVIE_DETAILS);
                     //controller.setRequest(request);
                     //controller.execute(request);
                // }

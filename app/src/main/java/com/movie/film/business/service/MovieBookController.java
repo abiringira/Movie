@@ -36,7 +36,7 @@ public class MovieBookController extends MovieBaseController {
                 headers.setContentType(MediaType.APPLICATION_JSON);
                 MovieRequest expenseRequestData = (MovieRequest) request;
                 HttpEntity<MovieRequest> entity = new HttpEntity<MovieRequest>(expenseRequestData, headers);
-                ResponseEntity<MovieResult> response = restTemplate.postForEntity(MovieClient.EXPENSE_CLAIM_PATH, entity, MovieResult.class);
+                ResponseEntity<MovieResult> response = restTemplate.postForEntity(MovieClient.MOVIE_DETAILS_PATH, entity, MovieResult.class);
                 HttpStatus status = response.getStatusCode();
                 if (HttpStatus.OK == status) {
                     dataResponse = response.getBody();
@@ -66,7 +66,7 @@ public class MovieBookController extends MovieBaseController {
                 //Log.e("MAPPING iF", lst.toString());
                 if (dataElement instanceof MovieRequest) {
                     Log.e("MAPPING", "FINDING BUG");
-                    expenseData = this.manageService(MovieClient.MovieServiceType.EXPENSE_CLAIM, dataElement);
+                    expenseData = this.manageService(MovieClient.MovieServiceType.MOVIE_DETAILS, dataElement);
 
                 }
             }
