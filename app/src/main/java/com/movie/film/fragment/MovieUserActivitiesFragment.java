@@ -25,6 +25,9 @@ import com.movie.film.business.service.MovieUserActivitiesController;
 import com.movie.film.model.Results;
 import com.movie.film.model.MovieActivityRequest;
 import com.movie.film.model.MovieData;
+import com.squareup.picasso.Callback;
+import com.squareup.picasso.Picasso;
+
 import org.springframework.util.StringUtils;
 import java.io.InputStream;
 import java.net.URL;
@@ -224,11 +227,22 @@ public  class MovieUserActivitiesFragment extends MovieMaintabFragment implement
                             listItemHolder.employee_name.setText(activity.getTitle());
                             Log.e("Fetching",activity.toString());
                           listItemHolder.expense_date.setText(activity.getRelease_date());
-
+                          String path = activity.getPoster_path();
                         //Bitmap bitmap = (Bitmap) BitmapFactory.decodeStream( activity.getPoster_path() );
                         //Bitmap bitmap = BitmapFactory.decodeFile(activity.getPoster_path());
-                          listItemHolder.expense_amount.setImageURI(Uri.parse("https://api.themoviedb.org/3/movie/"+activity.getId()+"/images?api_key=45d139dbb35cd83f615ff5c35a7c65b7&language=en-US"));
+                          //listItemHolder.expense_amount.setImageURI(Uri.parse("https://api.themoviedb.org/3/movie/"+activity.getId()+"/images?api_key=45d139dbb35cd83f615ff5c35a7c65b7&language=en-US"));
 
+                        Picasso.get()
+                                .load(path)
+                                .into(listItemHolder.expense_amount, new Callback() {
+                                    @Override
+                                    public void onSuccess() {
+                                    }
+
+                                    @Override
+                                    public void onError(Exception e) {
+                                    }
+                                });
                     }
                 }
             } catch (Exception e) {
